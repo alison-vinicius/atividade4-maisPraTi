@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cores */
+:root {
+  --cor-primaria: #0077cc;
+  --cor-secundaria: #f4f4f4;
+  --cor-texto: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.foto-perfil {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #005fa3;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Seções */
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+article {
+  margin-top: 1rem;
+}
+
+/* Aside */
+aside {
+  margin-top: 2rem;
+  background: #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-perfil {
+    width: 80px;
+  }
+}
